@@ -96,9 +96,11 @@ function randomColor(){
     var arrColors = ['#ed564b', '#64B5F6', '#8BC34A', '#FFDB5C', '#F8A055'];
     var random = Math.floor(Math.random()*arrColors.length);
 
-    document.getElementsByClassName('card')[0].style.backgroundColor = arrColors[random];
-    document.getElementsByClassName('card')[1].style.backgroundColor = arrColors[random];
-    document.getElementsByClassName('card')[2].style.backgroundColor = arrColors[random];
+    var cards =  document.getElementsByClassName('card');
+
+    for (var i = 0; i < cards.length; i++){
+        cards[i].style.backgroundColor = arrColors[random];
+    }
 
     document.getElementById('btn-restart').style.borderColor = arrColors[random];
 

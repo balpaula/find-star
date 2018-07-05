@@ -119,6 +119,7 @@ body {
     color: white;
     background-color: #777;
     border: 0.1em solid #777;
+    border-radius: 1em;
     transition: 0.5s;
 }
 
